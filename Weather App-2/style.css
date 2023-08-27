@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffe6a7;
+    color: #ffe6a7;
+}
+.container{
+    background-color: #99582a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 20px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+form input[type = "text"]{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 60%;
+    border-radius: 5px;
+    background: #ffe6a7;
+}
+form input[type = "submit"]{
+    background-color: #432818;
+    color: #ffe6a7;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+form input[type = "submit"]:hover{
+    background-color: #bb9457;
+}
+.icon img{
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.temperature{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.description{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.details > div {
+    padding: 20px;
+    background-color: #432818;
+    margin: 10px;
+    flex: 1;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 45px;
+}
+@media (max-width: 768px){
+    form{
+        flex-direction: column;
+    }
+    form input[type = "text"]{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
